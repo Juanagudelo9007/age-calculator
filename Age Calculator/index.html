@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+    <!--Main Container-->
+
+    <main class="main">  
+
+        <!--Form with div for each input and Button-->
+
+    <form class="container">
+        <div class="input-data">
+            <span>Day</span>
+            <input class="error" id="day" type="text"  placeholder="DD"></input>
+            <small class="error-day">Must be a valid  Day!</small>
+        </div>  
+        <div class="input-data">
+            <span>Month</span>
+            <input class="error" id="month" type="text" placeholder="MM"></input>
+            <small class="error-month">Must be a valid  Month!</small>
+        </div> 
+        <div class="input-data">
+            <span>Year</span>
+            <input class="error" id="year" type="text" placeholder="YY"></input>
+            <small class="error-year">Must be a valid  Year!</small>
+        </div> 
+        
+        <div class="button-submit">
+        <div class="line"></div>
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+            <small class="error-year" ></small>
+        </div>
+       
+    </form>
+
+    <div class="text">
+        <p class="line"></p>
+        <h1><span class="result">--</span>Years</h1>
+        <h1><span class="result">--</span>Months</h1>
+        <h1><span class="result">--</span>Days</h1>
+    </div>
+ </main>
+
+
+    <script  src="main.js"></script>
+</body>
+</html>
+
+
+
+

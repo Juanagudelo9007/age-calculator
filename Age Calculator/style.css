@@ -1,0 +1,201 @@
+/* variables to use the colors a bit easier */
+
+:root{
+     --white: hsl(0, 0%, 100%);
+--off-white: hsl(0, 0%, 94%);
+--light-grey: hsl(0, 0%, 86%);
+--smokey-grey: hsl(0, 1%, 44%);
+--off-black: hsl(0, 0%, 8%);
+
+--purple: hsl(259, 100%, 65%);
+--light-red: hsl(0, 100%, 67%);
+}
+
+/* import fonts */
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url("age-calculator-app-main/assets/fonts/Poppins-Bold.ttf");
+
+}
+
+@font-face{
+    font-family: Poppins-BoldItalic;
+    src: url("age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf"); 
+}
+
+@font-face{
+    font-family: ExtraBold;
+    src: url("age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf"); 
+}
+
+@font-face{
+    font-family: ExtraBoldItalic;
+    src: url("age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf"); 
+}
+
+@font-face{
+    font-family: Italic;
+    src: url("age-calculator-app-main/assets/fonts/Poppins-Italic.ttf"); 
+}
+@font-face{
+    font-family: Regular;
+    src: url("age-calculator-app-main/assets/fonts/Poppins-Regular.ttf"); 
+}
+
+/* Media query should go here   - Mobile: 375px
+- Desktop: 1440px */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins-Bold;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 50vw;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--light-grey);
+}
+
+/* main container  
+
+@media(max-width: 660px){
+    .main-container{
+        max-width: 300px;
+    }
+}
+
+@media( max-width: 400px){
+    .main-container{
+        max-width: 250px;
+    }
+}
+
+*/
+
+.main{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   width: 434px;  
+   border-radius: 10px;
+   border-bottom-right-radius: 85px;
+   background-color: var(--white);
+   padding: 20px 5px;
+   height: 350px;
+   
+}
+.container{
+    display: flex;  
+    height: 60px;
+       
+}
+/* input style */
+
+.input-data input{
+margin-left: 22px;
+display: flex;
+width: 90px;
+border-radius: 4px;
+border: 1px solid var(--light-grey);
+font-size: .7rem;
+padding-left: 50px;
+color:  var(--off-black);
+padding: 5px;
+}
+
+/* input border color purple */ 
+
+.input-data input:focus{
+    border: 1px solid var(--purple);
+    outline:none;
+}
+
+.line{
+    border-top: 1px solid var(--light-grey);
+    margin-top: 10px;
+    width: 80%;
+}
+
+
+.input-data span{
+    margin-right: 39px;
+    font-size: .5rem;
+    font-family: ExtraBold;
+    color: var(--smokey-grey);
+    text-transform: uppercase;  
+}
+
+/*button container*/
+
+.button-submit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+
+}
+/*button style*/
+
+.button-submit button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--purple);
+    cursor: pointer;
+    transition: .3s ease;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+/*button hover style*/
+
+.button-submit button:hover{
+    background-color: var(--off-black);
+    transition: .4s;
+}
+
+/*icon*/
+
+.button-submit svg{
+    padding: 8px;
+
+}
+
+/*Style Error*/
+
+.input-data small{
+    font-size: .4rem;
+    color: red;
+    display: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*Looks weird but is the limit of my 
+knowledge for now...*/
+
+ .error input{
+    border: 1px solid red;
+   
+}
+
+/*Text Result Stile*/
+
+.text{ 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin-right: 10px;  
+    margin-top: 30px;
+
+}
+
+
+.text span{ 
+    color: var(--purple)
+}
